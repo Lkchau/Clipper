@@ -40,8 +40,8 @@ async def get_clip(ctx):
     
     for url in urls:
         await ctx.send(url)
-    
-
+# @bot.event
+# async def on_
 
 @bot.event
 async def on_command_error(ctx, error):

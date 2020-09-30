@@ -10,7 +10,7 @@ load_dotenv()
 TWITCH_CLIENT_ID = os.getenv('TWITCH_CLIENT_ID')
 BASE_URL = os.getenv('TWITCH_URL')
 ACCESS_TOKEN = os.getenv('ACCESS_TOKEN')
-HEADERS = {'Client-ID': TWITCH_CLIENT_ID, 'Authorization': ACCESS_TOKEN}
+HEADERS = {'Client-ID': TWITCH_CLIENT_ID, 'Authorization': f'Bearer {ACCESS_TOKEN}'}
 INDENT = 2
 
 def get_response(query):
